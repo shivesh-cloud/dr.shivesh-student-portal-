@@ -1,5 +1,5 @@
 // Add your Google Apps Script Web App URL here after creating the Google Sheet backend.
-const API_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const API_URL = "https://script.google.com/macros/s/AKfycbwVSoRVxjpRxz5U89v_2YvvwdnM8ckVwQDVMRQOrjVVjmOgLsClhiTKSPVsV_zJY5gwKQ/exec";
 
 const demoStudents = {
   "1VB23PH001": {
