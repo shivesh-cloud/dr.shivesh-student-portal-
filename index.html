@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student of Dr. Shivesh Singh</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">Student of Dr. Shivesh Singh</div>
+  <div class="tagline">Student Academic Portal</div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Student Portal</h1>
+    <p>Check your marks, subjects, assignments and academic tasks.</p>
+  </section>
+
+  <section class="card login-card">
+    <h2>Student Login</h2>
+    <label for="usn">USN / Roll Number</label>
+    <input id="usn" type="text" placeholder="Enter your USN or Roll Number">
+    <label for="password">Password / Student Code</label>
+    <input id="password" type="password" placeholder="Enter your password">
+    <button id="loginBtn">Login</button>
+    <p id="message"></p>
+  </section>
+
+  <section id="dashboard" class="hidden">
+    <div class="card profile">
+      <div>
+        <h2 id="studentName">Student</h2>
+        <p id="studentInfo"></p>
+      </div>
+      <button class="logout" id="logoutBtn">Logout</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span>Internal</span><strong id="internal">—</strong></div>
+      <div class="stat"><span>Assignment</span><strong id="assignment">—</strong></div>
+      <div class="stat"><span>Attendance</span><strong id="attendance">—</strong></div>
+      <div class="stat"><span>Total</span><strong id="total">—</strong></div>
+    </div>
+
+    <div class="card">
+      <h2>My Subjects & Marks</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Subject</th><th>Internal</th><th>Assignment</th><th>Total</th></tr>
+          </thead>
+          <tbody id="marksBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Assignments & Tasks</h2>
+      <div id="tasks"></div>
+    </div>
+
+    <div class="card">
+      <h2>Announcements</h2>
+      <div id="announcements"></div>
+    </div>
+  </section>
+</main>
+
+<footer>© Student of Dr. Shivesh Singh · Student Academic Portal</footer>
+<script src="script.js"></script>
+</body>
+</html>
